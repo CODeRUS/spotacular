@@ -48,7 +48,7 @@ public:
 
     Q_INVOKABLE QVariant getUserData(const QString &key);
 
-    Q_INVOKABLE void search(const QString &keyword, int searchType = 15, int maxResults, int offset, QObject *receiver, const char *callback);
+    Q_INVOKABLE void search(const QString &keyword, int searchType = 15, int maxResults = 20, int offset = 0, QObject *receiver = 0, const char *callback = "");
     Q_INVOKABLE void playSong(const QString &uritype, const QStringList &ids);
     Q_INVOKABLE void download(const QString &uritype, const QStringList &ids);
 

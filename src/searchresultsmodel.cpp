@@ -77,10 +77,10 @@ QString SearchResultsModel::query() const
 void SearchResultsModel::setQuery(const QString &query)
 {
     if (_query != query) {
-        query = query;
+        _query = query;
         Q_EMIT queryChanged();
 
-        SpotifyIO::search(_query, _searchType, 100, 0, this, COMMANDCALLBACK(searchReply));
+        //SpotifyIO::search(_query, _searchType, 100, 0, this, COMMANDCALLBACK(searchReply));
     }
 }
 

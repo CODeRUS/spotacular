@@ -20,6 +20,9 @@ BuildRequires:  pkgconfig(Qt5Quick)
 BuildRequires:  desktop-file-utils
 BuildRequires:  pkgconfig(Qt5Script)
 BuildRequires:  pkgconfig(Qt5Multimedia)
+BuildRequires:  pkgconfig(Qt5WebSockets)
+BuildRequires:  protobuf-devel = 2.6.1
+BuildRequires:  protobuf-static = 2.6.1
 
 %description
 Spotify Music client
